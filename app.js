@@ -14,7 +14,7 @@ var WINDOWS_LIVE_CLIENT_SECRET = "koZkXVF9Aw5CbxGiB5Cp8K8c6ddc8TvI";
 var strategy = new WindowsLiveStrategy({
     clientID: WINDOWS_LIVE_CLIENT_ID,
     clientSecret: WINDOWS_LIVE_CLIENT_SECRET,
-    callbackURL: "http://YOUR-AZURE-WEBSITE-NAME.azurewebsites.net/auth/windowslive/callback"
+    callbackURL: "http://OttawaSpotBingo.azurewebsites.net/auth/windowslive/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
