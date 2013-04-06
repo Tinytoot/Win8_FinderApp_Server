@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 // get free mongo db @ www.mongolab.com
-var path = 'mongodb://YOUR-MONGO-DB-CONNECTION-STRING';
+var path = 'mongodb://MogoOpenData:BGRbXFdZBtpfeImWsGFyBPZi5omPu6KzmD9OI794ztw-@ds045107.mongolab.com:45107/MogoOpenData';
 module.exports = {
 	_db: null,
 	init: function() {

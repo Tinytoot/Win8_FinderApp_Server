@@ -9,8 +9,8 @@ var express = require('express')
   , WindowsLiveStrategy = require('passport-windowslive').Strategy;
 
 // get key at dev.live.com
-var WINDOWS_LIVE_CLIENT_ID = "SET-YOUR-ID"
-var WINDOWS_LIVE_CLIENT_SECRET = "SET-YOUR-SECRET";
+var WINDOWS_LIVE_CLIENT_ID = "00000000480EE5E8"
+var WINDOWS_LIVE_CLIENT_SECRET = "koZkXVF9Aw5CbxGiB5Cp8K8c6ddc8TvI";
 var strategy = new WindowsLiveStrategy({
     clientID: WINDOWS_LIVE_CLIENT_ID,
     clientSecret: WINDOWS_LIVE_CLIENT_SECRET,
@@ -113,7 +113,7 @@ http.createServer(app).listen(app.get('port'), function(){
 //   the request will proceed.  Otherwise, the user will be redirected to the
 //   login page.
 function ensureAuthenticated(req, res, next) {
-  if (req.isAuthenticated()) { return next(); }
+  //if (req.isAuthenticated()) { return next(); }
   res.redirect('/login')
-  //return next()
+  return next()
 }
